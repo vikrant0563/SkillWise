@@ -339,6 +339,9 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   padding-block: 32px;
   z-index: 4;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  
 }
 
 .header.active {
@@ -367,7 +370,7 @@ body.nav-active { overflow: hidden; }
   position: fixed;
   top: 0;
   left: -320px;
-  max-width: 320px;
+  max-width: 340px;
   width: 100%;
   background-color: var(--white);
   height: 100vh;
@@ -390,11 +393,13 @@ body.nav-active { overflow: hidden; }
 .navbar-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
 
 .navbar-link {
+  color: black;
+  font-weight: 600;
   padding-block: 8px;
   transition: var(--transition);
 }
 
-.navbar-link:is(:hover, :focus-visible) { color: var(--oxford-blue); }
+.navbar-link:is(:hover, :focus-visible) { color: var(--light-coral); }
 
 .overlay {
   position: fixed;
